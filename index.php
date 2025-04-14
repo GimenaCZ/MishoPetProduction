@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MishoPet</title>
-    <link rel="stylesheet" href="Assets/css/index.css">
+    <link rel="stylesheet" href="/Assets/css/index.css">
 </head>
 <body>
 <header class="header">
     <div class="logo">
-        <img src="Views/Images/logo.png" alt="MishoPet Logo">
+        <img src="/Views/Images/logo.png" alt="MishoPet Logo">
     </div>
     <nav class="navbar">
         <ul class="nav-links">
             <li><a href="index.php">Inicio</a></li>
-            <li><a href="Views/services.php">Servicios</a></li> 
-            <li><a href="Views/contact.php">Contactanos</a></li>
-            <li><a href="Views/reserva.php">Reservar Cita</a></li>
+            <li><a href="/Views/services.php">Servicios</a></li> 
+            <li><a href="/Views/contact.php">Contactanos</a></li>
+            <li><a href="/Views/reserva.php">Reservar Cita</a></li>
         </ul>
     </nav>
 </header>
     <!-- Banner -->
 
     <div class="image-banner">
-    <img src="Views/Images/imgIndex/foto1.png" alt="Banner MishoPet" class="banner-image">
+    <img src="/Views/Images/imgIndex/foto1.png" alt="Banner MishoPet" class="banner-image">
     <div class="button-container">
         <a href="Views/contact.php" class="banner-button">
             Contáctanos 📞
@@ -45,42 +45,42 @@
 <div class="services-section">
     <h2 class="services-title">Servicios</h2>
     <div class="services-images">
-        <img src="Views/Images/imgIndex/servicio1.png" alt="Servicio 1" class="service-image">
-        <img src="Views/Images/imgIndex/servicio2.png" alt="Servicio 2" class="service-image">
-        <img src="Views/Images/imgIndex/servicio3.png" alt="Servicio 3" class="service-image">
-        <img src="Views/Images/imgIndex/servicio4.png" alt="Servicio 4" class="service-image">
-        <img src="Views/Images/imgIndex/servicio5.png" alt="Servicio 5" class="service-image">
-        <img src="Views/Images/imgIndex/servicio6.png" alt="Servicio 6" class="service-image">
+        <img src="/Views/Images/imgIndex/servicio1.png" alt="Servicio 1" class="service-image">
+        <img src="/Views/Images/imgIndex/servicio2.png" alt="Servicio 2" class="service-image">
+        <img src="/Views/Images/imgIndex/servicio3.png" alt="Servicio 3" class="service-image">
+        <img src="/Views/Images/imgIndex/servicio4.png" alt="Servicio 4" class="service-image">
+        <img src="/Views/Images/imgIndex/servicio5.png" alt="Servicio 5" class="service-image">
+        <img src="/Views/Images/imgIndex/servicio6.png" alt="Servicio 6" class="service-image">
     </div>
 </div>
 
 <div class="trust-section"> 
     <h3 class="trust-title">Tu veterinaria de confianza</h3>
     <div class="trust-images">
-        <img src="Views/Images/imgIndex/trust1.png" alt="Imagen 1" class="trust-image">
-        <img src="Views/Images/imgIndex/trust2.png" alt="Imagen 2" class="trust-image">
-        <img src="Views/Images/imgIndex/trust3.png" alt="Imagen 3" class="trust-image">
-        <img src="Views/Images/imgIndex/trust4.png" alt="Imagen 4" class="trust-image">
+        <img src="/Views/Images/imgIndex/trust1.png" alt="Imagen 1" class="trust-image">
+        <img src="/Views/Images/imgIndex/trust2.png" alt="Imagen 2" class="trust-image">
+        <img src="/Views/Images/imgIndex/trust3.png" alt="Imagen 3" class="trust-image">
+        <img src="/Views/Images/imgIndex/trust4.png" alt="Imagen 4" class="trust-image">
     </div>
 </div>
     <div class="new-images">
         <div class="top-row">
             <div class="image-container">
-                <img src="Views/Images/imgIndex/new1.png" alt="Nueva Imagen 1" class="new-image">
+                <img src="/Views/Images/imgIndex/new1.png" alt="Nueva Imagen 1" class="new-image">
                 <a href="#" class="image-button button1">Cardiologia veterinaria</a>
             </div>
             <div class="image-container">
-                <img src="Views/Images/imgIndex/new2.png" alt="Nueva Imagen 2" class="new-image">
+                <img src="/Views/Images/imgIndex/new2.png" alt="Nueva Imagen 2" class="new-image">
                 <a href="#" class="image-button button2">Dermatología veterinaria</a>
             </div>
             <div class="image-container">
-                <img src="Views/Images/imgIndex/new3.png" alt="Nueva Imagen 3" class="new-image">
+                <img src="/Views/Images/imgIndex/new3.png" alt="Nueva Imagen 3" class="new-image">
                 <a href="#" class="image-button button3">Gastroenterología veterinaria</a>
             </div>
         </div>
         <div class="bottom-row">
             <div class="image-container">
-                <img src="Views/Images/imgIndex/new4.png" alt="Nueva Imagen 4" class="new-image">
+                <img src="/Views/Images/imgIndex/new4.png" alt="Nueva Imagen 4" class="new-image">
                 <a href="#" class="image-button button4">Oncología veterinaria</a>
             </div>
             <div class="image-container">

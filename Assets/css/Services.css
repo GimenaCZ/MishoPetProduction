@@ -1,0 +1,231 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del encabezado */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #0d7263;
+}
+
+/* Estilo del logo */
+.logo img {
+    height: 90px; /* Cambia el tamaño del logo */
+    transition: transform 0.3s ease; /* Transición para agrandar o achicar */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del logo al pasar el mouse */
+}
+
+/* Estilo de la barra de navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 150px;
+    transition: transform 0.3s ease; /* Transición para mover la barra de navegación */
+
+    /* Ajusta la posición de los enlaces de navegación */
+    position: relative;
+    left: -120px; /* Cambia este valor para mover los enlaces a la izquierda o derecha */
+}
+
+.nav-links:hover {
+    transform: translateX(5px); /* Mueve ligeramente la barra de navegación al pasar el mouse */
+}
+
+/* Estilo de los enlaces de navegación */
+.nav-links a {
+    text-decoration: none;
+    color: #0d7263;
+    font-size: 16px;
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1e90ff;
+    transform: scale(1.05);
+}
+/* Banner */
+.banner {
+    width: 100%; /* El banner ocupará todo el ancho */
+    height: auto; /* Ajusta la altura del banner a tu preferencia */
+    overflow: hidden; /* Esto asegura que no haya desplazamiento si la imagen es más grande */
+}
+
+.banner-content {
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin distorsionarse */
+}
+
+
+/* Sección de Servicios */
+.services-section {
+    padding: 50px 250px;
+    background-color: #e6f4f1;
+    text-align: center;
+}
+
+.services-title {
+    font-size: 35px;
+    color: #0d7263;
+}
+
+.services-subtitle {
+    font-size: 22px;
+    margin: 30px 0px;
+    color: #333;
+}
+
+/* Ajuste de cuadrícula para la sección de servicios */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas en lugar de cuatro */
+    gap: 30px; /* Espaciado entre los elementos */
+    justify-items: center;
+    margin: 50px 0px;
+}
+
+/* Estilo de cada tarjeta de servicio */
+.service-item {
+    width: 350px; /* Ajusta el ancho de las tarjetas */
+    height: 300px;
+    background-color: white;
+    padding: 15px;
+    border: 2px solid #0d7263;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.service-item.last-item img {
+    border: none;
+    object-fit: contain; /* Asegura que la imagen se ajuste al contenedor sin recortarse */
+    width: 100%; /* Ajusta la imagen al ancho completo del contenedor */
+    height: 280px;
+    border-radius: 0; /* Elimina el borde redondeado */
+    box-shadow: none; /* Elimina la sombra de la tarjeta */
+    background-color: transparent; /* Asegúrate de que el fondo sea transparente */
+}
+.service-item.last-item {
+    border: none;
+    background-color: transparent; /* Asegura que el fondo también sea transparente */
+    box-shadow: none; /* Elimina cualquier sombra en el contenedor */
+}
+
+/* Footer */
+.footer {
+    background-color: #00796b; /* Color de fondo similar */
+    color: #fff;
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1300px;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 80px;
+}
+
+.footer-links {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ddd; /* Cambio de color al pasar el mouse */
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1300px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons span {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1); /* Efecto zoom al pasar el mouse */
+}
+

@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.phone-number, .info-box{
+    color: #fff;
+}
+
+.img-dog {
+    position: absolute;
+    top: 225px; 
+    left: 15%; 
+    width: 8%; 
+}
+
+.img-cat {
+    position: absolute;
+    bottom: 615px; 
+    left: 40%; 
+    width: 8%;
+}

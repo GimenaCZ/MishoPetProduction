@@ -1,0 +1,397 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del encabezado */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #0d7263;
+}
+
+/* Estilo del logo */
+.logo img {
+    height: 90px; /* Cambia el tamaño del logo */
+    transition: transform 0.3s ease; /* Transición para agrandar o achicar */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del logo al pasar el mouse */
+}
+
+/* Estilo de la barra de navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 150px;
+    transition: transform 0.3s ease; /* Transición para mover la barra de navegación */
+
+    /* Ajusta la posición de los enlaces de navegación */
+    position: relative;
+    left: -120px; /* Cambia este valor para mover los enlaces a la izquierda o derecha */
+}
+
+.nav-links:hover {
+    transform: translateX(5px); /* Mueve ligeramente la barra de navegación al pasar el mouse */
+}
+
+/* Estilo de los enlaces de navegación */
+.nav-links a {
+    text-decoration: none;
+    color: #0d7263;
+    font-size: 16px;
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1e90ff;
+    transform: scale(1.05);
+}
+
+/*Banner */
+
+.image-banner {
+    position: relative; /* Permite posicionar elementos hijos de forma absoluta */
+    width: 100%; /* Asegura que el banner ocupe todo el ancho */
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+.banner-image {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: 600px; /* Establece una altura fija; ajusta este valor según sea necesario */
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsión */
+}
+
+.button-container {
+    position: absolute; /* Permite posicionar el botón en relación a su contenedor padre */
+    bottom: 30px; /* Ajusta la distancia desde la parte inferior */
+    left: 50%; /* Centra el botón horizontalmente */
+    transform: translateX(-50%); /* Ajusta la posición para que esté centrado */
+}
+
+.banner-button {
+    background-color: #0d7263; /* Color del botón */
+    color: white; /* Color del texto del botón */
+    padding: 13px 20px; /* Aumenta el espaciado interno del botón (ajusta estos valores) */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 8px; /* Bordes redondeados; ajusta según tu preferencia */
+    font-size: 18px; /* Aumenta el tamaño de fuente; ajusta según sea necesario */
+    display: flex; /* Para alinear el texto y el cuadrado */
+    align-items: center; /* Centra verticalmente el contenido */
+    transition: background-color 0.3s; /* Transición suave para cambios de color */
+}
+
+.square {
+    width: 20px; /* Aumenta el ancho del cuadrado */
+    height: 20px; /* Aumenta la altura del cuadrado */
+    background-color: #D9D9D9; /* Color del cuadrado */
+    margin-left: 10px; /* Espacio entre el texto y el cuadrado */
+}
+
+
+
+.banner-button:hover {
+    background-color: #0b5a4b; /* Color del botón al pasar el mouse */
+}
+
+/*Quienes somos*/
+
+.about-section {
+    text-align: center; /* Centra el texto */
+    margin: 40px 0; /* Añade espacio arriba y abajo */
+}
+
+.about-title {
+    color: #00857C; /* Color del título */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 30px; /* Tamaño de fuente del título; ajusta según sea necesario */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.about-description {
+    color: black; /* Color del texto de la descripción */
+    font-size: 19px; /* Tamaño de fuente de la descripción; ajusta según sea necesario */
+    max-width: 800px; /* Ancho máximo para la descripción */
+    margin: 60px auto; /* Centra el texto de la descripción */
+    line-height: 1.5; /* Espaciado entre líneas para mejorar la legibilidad */
+}
+
+/* Servicios*/
+
+.services-section {
+    text-align: center; /* Centra el texto */
+    margin: 40px 0; /* Añade espacio arriba y abajo */
+}
+
+.services-title {
+    color: #00857C; /* Color del título */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 30px; /* Tamaño de fuente del título; ajusta según sea necesario */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+
+.services-images {
+    display: flex; /* Usar flexbox para alineación */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten a la siguiente línea si es necesario */
+    margin: 60px 0px;
+}
+
+.service-image {
+    width: 30% !important; /* Cambia a tu tamaño deseado  */
+    max-width: 210px !important; /* Tamaño máximo deseado */
+    min-width: 150px !important; /* Tamaño mínimo deseado */
+    height: auto !important; /* Mantiene la proporción de la imagen */
+    margin: 10px !important; /* Espacio entre las imágenes */
+    padding: 0 !important; /* Elimina padding si hay */
+}
+
+/*Tu veterinaria de confianza  */
+
+.trust-section {
+    text-align: center; /* Centra el texto */
+    margin: 20px 0; /* Espacio arriba y abajo */
+}
+
+.trust-title {
+    font-size: 30px; /* Tamaño de fuente deseado */
+    font-weight: bold; /* Negrita */
+    color: #00857C; /* Color del texto */
+    margin: 60px 0px; /* Agrega espacio debajo del título */
+}
+
+
+/* Estilos para las imágenes en fila */
+.trust-images {
+    display: flex;
+    justify-content: center; /* Centra las imágenes */
+    gap: 200px; /* Controla el espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en pantallas pequeñas */
+    margin-top: 30px; /* Agrega espacio entre el título y las imágenes */
+    margin-bottom: 60px;
+}
+
+.trust-image {
+    width: 220px; /* Ajusta el tamaño de las imágenes aquí */
+    height: auto; /* Mantiene la proporción */
+}
+
+
+.new-section {
+    text-align: center; /* Centra el texto */
+    margin: 20px 0; /* Espacio arriba y abajo */
+}
+
+
+
+.new-images {
+    display: flex; /* Usar flexbox para las filas de imágenes */
+    flex-direction: column; /* Coloca las filas de imágenes en columnas */
+    align-items: center; /* Centra las filas horizontalmente */
+    max-width: 2000px; /* Ajusta el ancho máximo del contenedor si es necesario */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    margin-bottom: 60px;
+}
+
+.top-row, .bottom-row {
+    display: flex; /* Usa flexbox para alinear las imágenes en fila */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    margin: 0; /* Elimina márgenes en la fila */
+}
+
+.new-image {
+    flex: 1; /* Permite que las imágenes crezcan igual en su contenedor */
+    width: 100%; /* Las imágenes ocuparán el 100% del ancho de su contenedor */
+    max-width: 600px; /* Cambia esto al tamaño máximo que prefieras */
+    height: auto; /* Mantiene la proporción */
+    margin: 0; /* Elimina el margen entre las imágenes */
+    padding: 0; /* Elimina el padding */
+}
+
+/* Para eliminar el espacio entre filas de imágenes */
+.top-row img, .bottom-row img {
+    margin: -2px; /* Asegúrate de que no haya margen entre las imágenes */
+}
+
+/* botones */
+
+.image-button {
+    position: absolute; /* Posiciona el botón de forma absoluta respecto a la imagen */
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior de la imagen */
+    left: 50%; /* Centra el botón horizontalmente */
+    transform: translateX(-50%); /* Alinea el botón en el centro */
+    background-color: rgba(0, 135, 124, 0.7); /* Color de fondo del botón con transparencia */
+    color: white; /* Color del texto */
+    padding: 12px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 0; /* Bordes rectos para un botón rectangular */
+    text-decoration: none; /* Sin subrayado */
+    text-align: center; /* Centra el texto dentro del botón */
+    font-size: 16px; /* Tamaño de fuente del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+/* Estilos para los botones individuales */
+.button1 {
+    bottom: -760px; /* Ajusta la posición de este botón */
+    left: 34%; /* Ajusta la posición de este botón */
+}
+
+.button2 {
+    bottom: -760px; /* Ajusta la posición de este botón */
+    left: 50%; /* Ajusta la posición de este botón */
+}
+
+.button3 {
+    bottom: -760px; /* Ajusta la posición de este botón */
+    left: 66%; /* Ajusta la posición de este botón */
+}
+
+.button4 {
+    bottom: -1050px; /* Ajusta la posición de este botón */
+    left: 34%; /* Ajusta la posición de este botón */
+}
+
+.button5 {
+    bottom: -1050px; /* Ajusta la posición de este botón */
+    left: 50%; /* Ajusta la posición de este botón */
+}
+
+.button6 {
+    bottom: -1050px; /* Ajusta la posición de este botón */
+    left: 66%; /* Ajusta la posición de este botón */
+}
+
+/* Efecto hover opcional para el botón */
+.image-button:hover {
+    background-color: rgba(0, 135, 124, 0.9); /* Cambia el color al pasar el ratón */
+}
+
+/* Texto debajo */
+.description {
+    margin-top: 30px; /* Espacio entre las imágenes y el texto */
+    margin-bottom: 100px;
+    text-align: center; /* Centra el texto */
+    font-size: 22px; /* Tamaño de la fuente */
+    color: #000000; /* Color del texto */
+    padding: 0 20px; /* Padding horizontal para no tocar los bordes */
+}
+
+/* Contenedor del botón */
+.button-container {
+    text-align: center; /* Centra el botón */
+    margin-top: 30px; /* Espacio arriba del botón */
+}
+
+.curve-button {
+    background-color: #00857C; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 12px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 16px; /* Tamaño de fuente del texto */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+    display: inline-block; /* Hace que el botón se comporte como un bloque en línea */
+}
+
+/* Efecto hover opcional para el botón */
+.curve-button:hover {
+    background-color: #006e66; /* Cambia el color al pasar el ratón */
+}
+
+/* Footer */
+.footer {
+    background-color: #00796b; /* Color de fondo similar */
+    color: #fff;
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1300px;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 80px;
+}
+
+.footer-links {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ddd; /* Cambio de color al pasar el mouse */
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1300px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons span {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1); /* Efecto zoom al pasar el mouse */
+}

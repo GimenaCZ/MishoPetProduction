@@ -15,15 +15,15 @@
 <header class="header">
     <div class="logo">
         <a href="../index.php">
-            <img src="../Views/images/logo.png" alt="MishoPet Logo">
+            <img src="../Views/Images/logo.png" alt="MishoPet Logo">
         </a>
     </div>
     <nav class="navbar">
         <ul class="nav-links">
             <li><a href="../index.php">Inicio</a></li>
-            <li><a href="services.php">Servicios</a></li> 
-            <li><a href="contact.php">Contactanos</a></li>
-            <li><a href="reserva.php">Reservar Cita</a></li>
+            <li><a href="Services.php">Servicios</a></li> 
+            <li><a href="Contact.php">Contactanos</a></li>
+            <li><a href="Reserva.php">Reservar Cita</a></li>
         </ul>
     </nav>
 </header>

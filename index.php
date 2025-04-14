@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MishoPet</title>
-    <link rel="stylesheet" href="Assets/css/index.css">
+    <link rel="stylesheet" href="Assets/css/Index.css">
 </head>
 <body>
 <header class="header">
@@ -14,9 +14,9 @@
     <nav class="navbar">
         <ul class="nav-links">
             <li><a href="index.php">Inicio</a></li>
-            <li><a href="/services.php">Servicios</a></li> 
-            <li><a href="/contact.php">Contactanos</a></li>
-            <li><a href="Views/reserva.php">Reservar Cita</a></li>
+            <li><a href="Views/Services.php">Servicios</a></li> 
+            <li><a href="Views/Contact.php">Contactanos</a></li>
+            <li><a href="Views/Reserva.php">Reservar Cita</a></li>
         </ul>
     </nav>
 </header>

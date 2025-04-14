@@ -16,7 +16,7 @@
             <li><a href="index.php">Inicio</a></li>
             <li><a href="/services.php">Servicios</a></li> 
             <li><a href="/contact.php">Contactanos</a></li>
-            <li><a href="/reserva.php">Reservar Cita</a></li>
+            <li><a href="Views/reserva.php">Reservar Cita</a></li>
         </ul>
     </nav>
 </header>
@@ -30,34 +30,7 @@
         </a>
     </div>
 </div>
-<div style="max-width: 500px; margin: 50px auto; background-color: #00897B; padding: 30px; border-radius: 10px;">
-    <h2 style="text-align: center; color: #fff; font-weight: bold; margin-bottom: 10px;">RESERVA TU CITA</h2>
-    <form action="../Controllers/ReservaController.php" method="POST">
-        <input type="text" name="nombres" placeholder="Nombres completos" required style="width: 100%; padding: 10px; margin: 8px 0; border-radius: 5px; border: none;">
-        
-        <input type="tel" name="telefono" placeholder="Teléfono" required style="width: 100%; padding: 10px; margin: 8px 0; border-radius: 5px; border: none;">
-        
-        <input type="email" name="correo" placeholder="Correo electrónico" required style="width: 100%; padding: 10px; margin: 8px 0; border-radius: 5px; border: none;">
-        
-        <input type="text" name="mascota" placeholder="Nombre de la mascota" required style="width: 100%; padding: 10px; margin: 8px 0; border-radius: 5px; border: none;">
 
-        <div style="margin: 8px 0; color: #fff;">
-            <label style="display: block; margin-bottom: 5px;">Tipo de mascota:</label>
-            <label style="margin-right: 15px;">
-                <input type="radio" name="tipo" value="Perro" required> Perro
-            </label>
-            <label>
-                <input type="radio" name="tipo" value="Gato"> Gato
-            </label>
-        </div>
-
-        <textarea name="motivo" placeholder="Motivo de la cita" required style="width: 100%; padding: 10px; margin: 8px 0; border-radius: 5px; border: none;"></textarea>
-
-        <input type="date" name="fecha" required style="width: 100%; padding: 10px; margin: 8px 0; border-radius: 5px; border: none;">
-
-        <button type="submit" style="background-color: #FFCA28; color: #000; border: none; padding: 10px 20px; border-radius: 5px; margin-top: 10px; cursor: pointer;">Enviar</button>
-    </form>
-</div>
  <!-- Quienes somos -->
 
 <div class="about-section">

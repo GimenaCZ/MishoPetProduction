@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: mishopet
+    env: php
+    plan: free
+    rootDir: .
+    buildCommand: ""
+    startCommand: ""

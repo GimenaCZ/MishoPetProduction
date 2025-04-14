@@ -1,8 +1,5 @@
 services:
   - type: web
     name: mishopet
-    env: php
+    env: docker
     plan: free
-    rootDir: .
-    buildCommand: ""
-    startCommand: ""
